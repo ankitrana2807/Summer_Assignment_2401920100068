@@ -1,6 +1,6 @@
 package Week_1.Day_5;
 
-public class Main {
+public class ReverseString {
 
     public static void reverseString(char[] s) {
 
@@ -9,6 +9,7 @@ public class Main {
 
         while (left < right) {
 
+            // Swap characters
             char temp = s[left];
             s[left] = s[right];
             s[right] = temp;
@@ -24,10 +25,6 @@ public class Main {
 
         reverseString(s);
 
-        System.out.print("Reversed String: ");
-
-        for (char ch : s) {
-            System.out.print(ch);
-        }
+        System.out.println(s);
     }
 }
